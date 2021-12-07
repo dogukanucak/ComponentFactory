@@ -1,0 +1,36 @@
+{
+  /* Editor Settings */
+
+  "editor.fontFamily": "\"Fira Code\"",
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll.stylelint": true
+  },
+
+  /* File Settings */
+
+  "files.trimFinalNewlines": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  /* Eslint */
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss"],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  /* Explorer Settings */
+  "files.exclude": {
+    "node_modules": true
+  }
+}
