@@ -1,0 +1,121 @@
+
+  $cff-example: "\ea01";
+
+  $cff-example2: "\ea02";
+
+
+@font-face {
+  font-display: block;
+  font-family: "ComponentFactoryFont";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./ComponentFactoryFont.eot?1638918384955");
+  src: url("./ComponentFactoryFont.eot?#iefix") format("embedded-opentype"), url("./ComponentFactoryFont.woff2?1638918384955") format("woff2"), url("./ComponentFactoryFont.woff?1638918384955") format("woff"), url("./ComponentFactoryFont.ttf?1638918384955") format("truetype"), url("./ComponentFactoryFont.svg?1638918384955#ComponentFactoryFont") format("svg");
+}
+
+%cff {
+display: inline-block;
+  font-family: "ComponentFactoryFont";
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cff {
+  @extend %cff;
+}
+
+.cff-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.cff-xs {
+  font-size: 0.75em;
+}
+
+.cff-sm {
+  font-size: 0.875em;
+}
+
+.cff-1x {
+  font-size: 1em;
+}
+
+.cff-2x {
+  font-size: 2em;
+}
+
+.cff-3x {
+  font-size: 3em;
+}
+
+.cff-4x {
+  font-size: 4em;
+}
+
+.cff-5x {
+  font-size: 5em;
+}
+
+.cff-6x {
+  font-size: 6em;
+}
+
+.cff-7x {
+  font-size: 7em;
+}
+
+.cff-8x {
+  font-size: 8em;
+}
+
+.cff-9x {
+  font-size: 9em;
+}
+
+.cff-10x {
+  font-size: 10em;
+}
+
+.cff-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.cff-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.cff-pull-left {
+  float: left;
+}
+
+.cff-pull-right {
+  float: right;
+}
+
+.cff.cff-pull-left {
+  margin-right: 0.3em;
+}
+
+.cff.cff-pull-right {
+  margin-left: 0.3em;
+}
+
+
+.cff-example::before {
+    content: "\ea01";
+}
+
+.cff-example2::before {
+    content: "\ea02";
+}
+
