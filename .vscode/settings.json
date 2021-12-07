@@ -32,5 +32,15 @@
   /* Explorer Settings */
   "files.exclude": {
     "node_modules": true
+  },
+
+  /* TODO Settings - https://www.truesec.com/hub/blog/configuring-vscode-todo-tree */
+  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "EXAMPLE"],
+  "todo-tree.highlights.customHighlight": {
+    "EXAMPLE": {
+      "icon": "rocket",
+      "type": "line",
+      "foreground": "#00ff00"
+    }
   }
 }
