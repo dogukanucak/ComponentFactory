@@ -9,7 +9,7 @@
     "source.organizeImports": true,
     "source.fixAll.stylelint": true
   },
-
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   /* File Settings */
 
   "files.trimFinalNewlines": true,
