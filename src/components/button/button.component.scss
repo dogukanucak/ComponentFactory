@@ -1,0 +1,79 @@
+@import "./button.component.variables.scss";
+a {
+  text-decoration: none;
+}
+// @each $button, $color in $colors {
+//   .#{$button} {
+//     --color: #{$color};
+//     --hover: #{adjust-hue($color, 45deg)};
+//   }
+// }
+.base-button {
+  background: none;
+  border: 1px solid;
+  border-radius: 1em;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color: $default;
+  transition: 0.25s;
+  display: inline-block;
+
+  &:hover,
+  &:focus {
+  }
+}
+
+// animation features
+
+// --animation-color-hover: {adjust-hue(var(--animation-color), 45deg)};
+
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--animation-color);
+}
+
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff, 0);
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--animation-color);
+  }
+}
+
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--animation-color),
+    inset 3.5em 0 0 0 var(--animation-color);
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--animation-color);
+  transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--animation-color);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--animation-color);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--animation-color),
+    inset 0.3em 0.3em 0 0 var(--animation-color);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 0 var(--animation-color),
+      inset 6em 3.5em 0 0 var(--animation-color);
+  }
+}
