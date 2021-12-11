@@ -3,13 +3,12 @@ import { ErrorHandler, Injectable } from "@angular/core";
 
 @Injectable()
 export class GlobalErrorHandler implements ErrorHandler {
-  handleError(error: unknown) {
+  handleError(error: Error | HttpErrorResponse) {
     // Check if it's an error from an HTTP response
     if (error instanceof HttpErrorResponse) {
-      console.log("Error : ", error.message);
-      console.log("Status : ", error.status);
+      // Network Error
+    } else {
+      // Application Error
     }
-
-    console.error("Error from global error handler", error);
   }
 }
