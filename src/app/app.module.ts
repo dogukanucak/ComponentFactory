@@ -4,11 +4,13 @@ import { BrowserModule } from "@angular/platform-browser";
 import { GlobalErrorHandler } from "@componentfactory/handlers/index";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+import { DomService } from "./tools/services/dom.service";
 
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [
+    DomService,
     {
       provide: ErrorHandler,
       useClass: GlobalErrorHandler,
